@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
 </head>
 <body>
-    Сайт студента Илика Дмитрия 3419/в
-    <a href="01nov24.html">1 Ноября 2024</a>
+    <h1>Добро пожаловать на главную страницу!</h1>
+    <a href="05nov24.html">5 ноября 2024. Цвета RGB,</a>
+
+    <script>
+        let box1 = document.createElement('div');
+        box1.style.width = '200px';
+        box1.style.height = '300px';
+        box1.style.backgroundColor = 'rgb(255, 0, 0)';
+        document.body.append(box1);
+
+        const colors = [
+            'rgb(0, 0, 255)', 
+            'rgb(0, 255, 0)', 
+            'rgb(0, 0, 0)',
+            'rgb(255, 255, 255)',
+            'rgb(255, 165, 0)',
+            'rgb(128, 0, 128)',
+            'rgb(255, 192, 203)',
+            'rgb(255, 255, 0)',
+            'rgb(165, 42, 42)'
+        ];
+
+        colors.forEach(color => {
+            let box = document.createElement('div'); 
+            box.style.width = '200px'; 
+            box.style.height = '300px'; 
+            box.style.backgroundColor = color; 
+            document.body.append(box);
+        });
+    </script>
 </body>
 </html>
